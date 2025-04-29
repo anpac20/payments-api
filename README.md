@@ -34,14 +34,14 @@ http://localhost:8000/docs
 
 ---
 
-## PUBLIC API
+## Public API
 
 This API is deployed using Docker + Render.
 Access it here:
-https://mock-payments-api.onrender.com/docs
+https://payments-api-9127.onrender.com/docs
 
 
-## EXAMPLE PAYLOAD
+## Example Payload
 
 {
   "card_number": "4111111111111111",
@@ -50,7 +50,7 @@ https://mock-payments-api.onrender.com/docs
   "customer_name": "Maria Oliveira"
 }
 
-## AUTHOR
+## Author
 
 Developed by Antonio Clóvis Pacheco Neto.
 This project is part of my personal portfolio, simulating real payment processing flows typically used by acquirers and processors.
