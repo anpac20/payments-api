@@ -1,5 +1,3 @@
-# Mock Payments API Project
-
 [Github repo] (https://github.com/anpac20/payments-api)
 
 ## Project Overview
