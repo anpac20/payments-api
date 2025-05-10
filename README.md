@@ -26,9 +26,7 @@ The development followed three main stages:
 - Verified database schema and records by connecting externally with **DBeaver**
 - Ensured that the deployed API writes and reads from the live PostgreSQL database hosted on Render
 
-  ![DBeaver](database-query.png "Records in database hosted on Render")
-
-
+  ![DBeaver](images/database-query.png "Records in database hosted on Render")
 
 ### 3. Containerization and Deployment
 
@@ -37,6 +35,9 @@ The development followed three main stages:
 - Deployed the Dockerized application to **Render**, exposing the API publicly
 - Verified deployment and tested the API in a live environment
 - Connected to the production database externally to validate records
+
+  ![Postman](images/payment-request.png "Payment request and respective response")
+
 
 ## Features
 
