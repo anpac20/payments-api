@@ -41,7 +41,7 @@ The development followed three main stages:
 - Deployed the Dockerized application to **Render**, exposing the API publicly
 - Verified deployment and tested the API in a live environment
 
-### 2. PostgreSQL Integration and External Access
+### 3. PostgreSQL Integration and External Access
 
 - Configured **PostgreSQL as the production database** to store payment records
 - Set up **SQLAlchemy ORM** to manage database interactions
