@@ -7,9 +7,15 @@ from sqlalchemy import create_engine, Column, String, Float
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = "sqlite:///./payments.db"
 
-engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+DATABASE_URL = "postgresql://transactions_de3h_user:f9QOUCwn5lCKpGCERfFoqMlJ6vEh9vwR@dpg-d0f88b6uk2gs738jngkg-a.oregon-postgres.render.com/transactions_de3h"
+engine = create_engine(DATABASE_URL)
+
+# for local testing
+
+##ATABASE_URL = "postgresql://transactions_de3h_user:f9QOUCwn5lCKpGCERfFoqMlJ6vEh9vwR@dpg-d0f88b6uk2gs738jngkg-a.oregon-postgres.render.com/transactions_de3h"
+##engine = create_engine(DATABASE_URL)
+
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 Base = declarative_base()
 
