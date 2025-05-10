@@ -26,6 +26,9 @@ The development followed three main stages:
 - Verified database schema and records by connecting externally with **DBeaver**
 - Ensured that the deployed API writes and reads from the live PostgreSQL database hosted on Render
 
+  ![DBeaver](Database-query.png "Records in database hosted on Render")
+
+
 
 ### 3. Containerization and Deployment
 
