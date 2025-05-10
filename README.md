@@ -17,6 +17,8 @@ The development followed three main stages:
 - Defined request/response models with **Pydantic** for data validation
 - Implemented simulated logic for authorization and refund flows
 
+  ![Postman](images/payment-request.png "Payment request and respective response")
+
 ### 2. PostgreSQL Integration and External Access
 
 - Configured **PostgreSQL as the production database** to store payment records
@@ -36,7 +38,6 @@ The development followed three main stages:
 - Verified deployment and tested the API in a live environment
 - Connected to the production database externally to validate records
 
-  ![Postman](images/payment-request.png "Payment request and respective response")
 
 
 ## Features
