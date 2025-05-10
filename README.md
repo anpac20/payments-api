@@ -1,10 +1,19 @@
-# Payments API
+# Mock Payments API
 
+## Project Overview
 A RESTful API for simulating payment flows, including authorization, refund, transaction status query, and settlement file generation.
 
 This project replicates key functionalities found in real-world payment acquirer and processor systems. Built with FastAPI, SQLAlchemy, Docker, and deployed on Render, it demonstrates backend development, API design, and deployment practices.
 
-## Project Overview
+## Tech Stack
+
+- Python
+- FastAPI
+- SQLAlchemy
+- SQLite (local) / PostgreSQL (production)
+- Uvicorn
+- Docker
+- Render (deployment)
 
 The development followed three main stages:
 
@@ -17,7 +26,14 @@ The development followed three main stages:
 - Defined request/response models with **Pydantic** for data validation
 - Implemented simulated logic for authorization and refund flows
 
+#### Features
+
+- Create a payment (`POST /payment`)
+- Refund a payment (`POST /refund/{payment_id}`)
+- Retrieve payment status (`GET /status/{payment_id}`)
+
   ![Postman](images/payment-request.png "Payment request and respective response")
+
 
 ### 2. PostgreSQL Integration and External Access
 
@@ -38,24 +54,6 @@ The development followed three main stages:
 - Verified deployment and tested the API in a live environment
 - Connected to the production database externally to validate records
 
-
-
-## Features
-
-- Create a payment (`POST /payment`)
-- Refund a payment (`POST /refund/{payment_id}`)
-- Retrieve payment status (`GET /status/{payment_id}`)
-- Automatically generates a settlement file for reconciliation
-
-## Tech Stack
-
-- Python
-- FastAPI
-- SQLAlchemy
-- SQLite (local) / PostgreSQL (production)
-- Uvicorn
-- Docker
-- Render (deployment)
 
 ## Running Locally
 
