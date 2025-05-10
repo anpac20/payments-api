@@ -1,4 +1,8 @@
-# Mock Payments API
+---
+Mock Payments API
+---
+
+Github repo: https://github.com/anpac20/payments-api
 
 ## Project Overview
 A RESTful API for simulating payment flows, including authorization, refund, transaction status query, and settlement file generation.
@@ -52,7 +56,6 @@ The development followed three main stages:
 - Built and ran the application locally using Docker
 - Deployed the Dockerized application to **Render**, exposing the API publicly
 - Verified deployment and tested the API in a live environment
-- Connected to the production database externally to validate records
 
 
 ## Running Locally
