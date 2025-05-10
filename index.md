@@ -1,4 +1,4 @@
-[Github repo] (https://github.com/anpac20/payments-api)
+[Github repo](https://github.com/anpac20/payments-api)
 
 ## Project Overview
 A RESTful API for simulating payment flows, including authorization, refund, transaction status query, and settlement file generation.
