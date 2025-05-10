@@ -44,11 +44,11 @@ The development followed three main stages:
 
 ## Tech Stack
 
-- Python 3.10
+- Python
 - FastAPI
 - SQLAlchemy
 - SQLite (local) / PostgreSQL (production)
-- Uvicorn (ASGI server)
+- Uvicorn
 - Docker
 - Render (deployment)
 
@@ -57,8 +57,10 @@ The development followed three main stages:
 To build and run the application locally with Docker:
 
 ```bash
-docker build -t mock-payments-api .
-docker run -d --restart always -p 8000:8000 mock-payments-api
+docker build -t payments-api .
+docker run -d --restart always -p 8000:8000 payment-api
+```
+
 Access the API documentation at: http://localhost:8000/docs
 
 ## Public API
@@ -69,9 +71,11 @@ https://payments-api-9127.onrender.com/docs
 
 ## Example Payload
 
+```bash
 {
   "card_number": "4111111111111111",
   "amount": 150.00,
   "currency": "USD",
   "customer_name": "Maria Oliveira"
 }
+```
