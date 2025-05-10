@@ -34,6 +34,12 @@ The development followed three main stages:
 
   ![Postman](images/payment-request.png "Payment request and respective response")
 
+### 2. Containerization and Deployment
+
+- Wrote a **Dockerfile** to containerize the FastAPI application
+- Built and ran the application locally using Docker
+- Deployed the Dockerized application to **Render**, exposing the API publicly
+- Verified deployment and tested the API in a live environment
 
 ### 2. PostgreSQL Integration and External Access
 
@@ -46,12 +52,7 @@ The development followed three main stages:
 
   ![DBeaver](images/database-query.png "Records in database hosted on Render")
 
-### 3. Containerization and Deployment
 
-- Wrote a **Dockerfile** to containerize the FastAPI application
-- Built and ran the application locally using Docker
-- Deployed the Dockerized application to **Render**, exposing the API publicly
-- Verified deployment and tested the API in a live environment
 
 
 ## Running Locally
